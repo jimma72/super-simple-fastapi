@@ -10,3 +10,7 @@ def read_root():
 @app.get("/hello/{item_id}")
 def read_item(item_id: int):
     return {"message": f"Hello {item_id}"}
+  
+@app.get("/items/{item_id}")
+def read_item(item_id: int):
+    return {"message": f"Hello Item {item_id}"}
